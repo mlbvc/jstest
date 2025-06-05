@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #grand {
+      width: 100px;
+      height: 100px;
+      background: black;
+    }
+  </style>
+</head>
+<body>
+  <div id="parent">
+    <div id="child">
+      <div id="grand"></div>
+    </div>
+  </div>
+</body>
+</html>
+<script>
+  let parent = document.getElementById('parent');
+  let child = document.getElementById('child');
+  let grand = document.getElementById('grand');
+  parent.onclick = function () {
+    console.log('parent')
+  }
+  
+  child.onclick = function () {
+    console.log('child')
+  }
+  
+  grand.onclick = function () {
+    console.log('grand')
+  }
+</script>
